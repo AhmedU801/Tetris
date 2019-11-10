@@ -285,8 +285,8 @@ def draw_window(surface, score=0, last_score=0):
 
 
 def update_score(nscore, score):
-    with open('high_score.txt', 'w') as f:
-        if int(score) <= nscore:
+    if int(score) <= nscore:
+        with open('high_score.txt', 'w') as f:
             f.write(str(nscore))
 
 
