@@ -388,7 +388,6 @@ def main():
             run = False
             update_score(score, last_score)
 
-    draw_text_middle("You Lost", 40, (255, 255, 255), win)
     pygame.display.update()
     pygame.time.delay(2000)
 
